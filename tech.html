@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Technician Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Edit Final Report</h1>
+
+<textarea id="editor" style="width:90%;height:300px;"></textarea>
+<br><br>
+
+<button onclick="save()">Save</button>
+
+<script>
+document.getElementById("editor").value = localStorage.getItem("finalReport");
+
+function save(){
+    localStorage.setItem("finalReport", document.getElementById("editor").value);
+    alert("Saved locally. (PRANK ONLY)");
+}
+</script>
+
+</body>
+</html>
