@@ -72,7 +72,7 @@ function finishScan(){
 // Technician page
 function openTechPage(){
     let pw = prompt("Enter Technician Password:");
-    if(pw === "98999 23392"){
+    if(pw === "9899923392"){
         window.location.href = "tech.html";
     } else {
         alert("Incorrect Password");
