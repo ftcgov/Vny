@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PRANK — Apple Security Scan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="prank-title">⚠️ PRANK — NOT REAL APPLE SECURITY TOOL ⚠️</h1>
+
+<div class="container">
+    <h2>Apple Security Scan</h2>
+
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="ip" placeholder="IP Address" required>
+        <button type="submit">Start Scan</button>
+    </form>
+</div>
+
+<div id="scanner" class="hidden">
+    <h3>Device Security Terminal — iOS / macOS / iPadOS</h3>
+    <div class="terminal" id="terminal">
+        <p>© 2025 Apple Inc. All rights reserved.</p>
+        <p>Initializing system…</p>
+    </div>
+
+    <div class="cmd-box">
+        <input id="commandInput" placeholder="Type errorfix403, errorfix456, errorfix923, errorfix780">
+        <button onclick="runCommand()">Run</button>
+    </div>
+
+    <p id="timer">Scan Time: 15:00</p>
+</div>
+
+<div id="finalReport" class="hidden">
+    <h2>Final Security Report</h2>
+    <p id="reportDetails"></p>
+
+    <h3>Detected Threat Actors (37)</h3>
+    <ul id="hackerList"></ul>
+
+    <p><b>Total Hackers:</b> 234</p>
+    <p><b>Security Level:</b> 9%</p>
+    <p><b>Viruses Found:</b> 76</p>
+
+    <button onclick="openTechPage()">AppleSupportServer</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
